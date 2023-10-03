@@ -1,0 +1,15 @@
+#true ise istila var, false ise yok (Manuel olarak bunu değiştirmeyin, bunun yerine komutları kullanın /istila başlat /istila bitir)
+istila: false
+
+#İstila Süreleri (20 = 20.00 demek), baslangic-dakika 30 ise (20.30) yapıyor, default süre ise istilanın ne kadar süreceği (30 dakika)
+istila-baslangic-saat: 20
+istila-baslangic-dakika: 30
+default-istila-süresi: 30
+kalan-istila-süresi: 0
+
+
+#tomar (saniye cinsinden)
+default-tomar-süresi: 20
+
+#Vergi
+vergi-yuzdesi: 5

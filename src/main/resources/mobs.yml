@@ -1,0 +1,7 @@
+Mobs:
+  SkeletalKnight:
+    amount: 2
+    level: 5
+  SkeletonKing:
+    amount: 1
+    level: 20
