@@ -1,7 +1,10 @@
 plugins {
     id 'java'
+    id "com.github.johnrengelman.shadow" version "7.1.2"
 }
-
+shadowJar {
+    relocate 'com.github.stefvanschie.inventoryframework', 'me.taylan.AesirIstila.inventoryframework'
+}
 group = 'me'
 version = '1.0-SNAPSHOT'
 
@@ -15,10 +18,19 @@ repositories {
         name = "sonatype"
         url = "https://oss.sonatype.org/content/groups/public/"
     }
+    maven {
+        url = uri('https://repo.extendedclip.com/content/repositories/placeholderapi/')
+    }
+    maven { url 'https://mvn.lumine.io/repository/maven-public/' }
+    maven { url 'https://repo.william278.net/releases' }
 }
 
 dependencies {
-compileOnly "io.papermc.paper:paper-api:1.19.4-R0.1-SNAPSHOT"
+    compileOnly 'io.lumine:Mythic-Dist:5.3.5'
+    compileOnly 'me.clip:placeholderapi:2.11.3'
+    compileOnly "io.papermc.paper:paper-api:1.19.4-R0.1-SNAPSHOT"
+    compileOnly 'net.william278:husktowns:2.5.3'
+    implementation 'com.github.stefvanschie.inventoryframework:IF:0.10.11'
 }
 
 def targetJavaVersion = 17

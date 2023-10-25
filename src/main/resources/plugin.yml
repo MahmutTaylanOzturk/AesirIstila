@@ -2,3 +2,6 @@ name: AesirIstila
 version: '${version}'
 main: me.taylan.AesirIstila
 api-version: '1.19'
+
+commands:
+  istila:
